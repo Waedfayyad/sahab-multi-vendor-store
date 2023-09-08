@@ -1,0 +1,85 @@
+body{background-color: #f7f2f2;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button{
+    width: 100%;
+    background-color: hsl(217, 76%, 56%);
+    color: white;
+    padding: 14px 20px;
+    
+    margin: 8px 0;
+  font-size: 20px;
+  font-weight: 200;
+    
+    margin-top: 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.auth-block {
+    width: 40%;
+    /* margin: auto; */
+    padding: 30px;
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 9px 46px 8px rgb(0 0 0 / 12%), 0 24px 38px 3px rgb(0 0 0 / 14%);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  button:hover {
+    background-color: #45a049;
+
+  }
+* {
+    font-family: 'stc';
+    color: rgb(105, 103, 102);
+}
+div{display: block;}
+  
+  .f1 {
+    border-radius: 5px;
+    padding: 20px;
+    margin-top:100px;
+    margin-right:100px;
+    margin-left:100px;
+    display: block;
+    align-content: center;
+
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+  .td1{font-size: 30px;
+text-align: center;}
+  .img2 {
+    border-radius: 5px;
+    float: left;
+   
+  }
+  .img2 {
+    border-radius: 5px;
+    width:"1000";
+    height:"420";
+    background-color: white;
+   
+  }
+  .log{
+    background-color: white;box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 9px 46px 8px rgb(0 0 0 / 12%), 0 24px 38px 3px rgb(0 0 0 / 14%); 
+    border-radius: 9px;
+direction: none;
+width: 350px;
+padding: 15px;
+}
+  
+    th{font-size:  50px;}
