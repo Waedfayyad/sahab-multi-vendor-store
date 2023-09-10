@@ -40,22 +40,21 @@ input {
     background-color: #45a049;
 
   }
+
 * {
     font-family: 'stc';
     color: rgb(105, 103, 102);
 }
-div{display: block;}
+div{ display: inline;}
   
-  .f1 {
+.f1{
     border-radius: 5px;
     padding: 20px;
     margin-top:100px;
     margin-right:100px;
     margin-left:100px;
-    display: block;
     align-content: center;
-
-  }
+}
   *, ::after, ::before {
     box-sizing: border-box;
 }
