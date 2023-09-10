@@ -1,28 +1,35 @@
-body{margin: 0;
-background-color: aliceblue;}
-.colores{
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.colores {
     height: 7px;
     margin: 0;
-    background: linear-gradient(to right, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: linear-gradient(to right, rgba(255, 208, 7) 0%, rgba(255, 208, 7) 12.5%, rgba(192, 156, 221, 1) 62.5%, rgba(192, 156, 221, 1) 75%);
 }
-.colores1{
+
+.colores1 {
     height: 10px;
     margin: 0;
     margin-top: 20px;
-    background: linear-gradient(to right, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: linear-gradient(to right, rgba(255, 208, 7) 0%, rgba(255, 208, 7) 12.5%, rgba(192, 156, 221, 1) 62.5%, rgba(192, 156, 221, 1) 75%);
 }
-nav{
-   
-    padding-right:100px ;
+
+nav {
+
+    padding-right: 100px;
     padding-left: 100px;
     margin-top: 30px;
 }
-nav .left{
+
+nav .left {
     display: flex;
     float: left;
     text-align: center;
 }
-nav button{
+
+nav button {
     background-color: rgb(73, 185, 117);
     border: none;
     color: white;
@@ -32,13 +39,15 @@ nav button{
     height: 40px;
     margin-top: 5px;
 }
-nav .left div{
-    margin-right:15px ;
+
+nav .left div {
+    margin-right: 15px;
 
 }
-.main{
+
+.main {
     position: relative;
-    background-image:url(slider-2.jpg);
+    background-image: url(slider-2.jpg);
     height: 400px;
     width: 100%;
     margin-top: 20px;
@@ -46,22 +55,28 @@ nav .left div{
     background-size: cover;
     background-position: center center;
 }
-.welcome{
-   background-color: white;
-   position: absolute; 
-   top: 50px;
-   left: 100px;
-   padding: 20px;
- border-radius: 5px;
+
+.welcome {
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    padding: 20px;
+    border-radius: 5px;
 }
-.welcome label{display: block; 
+
+.welcome label {
+    display: block;
 }
-.welcome input{display: block; 
-width: 95%;
-height: 20px;
-margin-top: 5px;
+
+.welcome input {
+    display: block;
+    width: 95%;
+    height: 20px;
+    margin-top: 5px;
 }
-.welcome button{
+
+.welcome button {
     border: none;
     color: rgb(255, 255, 255);
     background-color: #7600d9;
@@ -73,15 +88,18 @@ margin-top: 5px;
     justify-content: center;
     width: 100%;
 }
-.welcome div h2{
-    text-align: center; 
+
+.welcome div h2 {
+    text-align: center;
     margin-top: 15px;
 }
-.welcome div p{
+
+.welcome div p {
     text-align: center;
     margin-top: 1px;
 }
-.catg h1{
+
+.catg h1 {
     font-weight: bold;
     color: rgb(54, 52, 51);
     background-color: aliceblue;
@@ -90,60 +108,122 @@ margin-top: 5px;
     margin-right: 30px;
     margin-top: 30px;
 }
+
 .catg .items {
-    
+
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
-    margin-left:  80px;
+    margin-left: 80px;
     margin-right: 80px;
     margin-top: 60px;
-   
+
 }
+
 .catg .items .item {
     text-align: center;
     margin-left: 30px;
     white-space: nowrap;
 }
-.catg .items .item img{
-border-radius: 50%;
-box-shadow: 2px 2px 6px gray;
-height: 75px;
-width: 75px;
-background-color: white;}
-.catg .items .item p{
+
+.catg .items .item img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px gray;
+    height: 75px;
+    width: 75px;
+    background-color: white;
+}
+
+.catg .items .item p {
     margin-top: 3px;
 }
+
 .cards {
     padding-left: 100PX;
     padding-top: 20PX;
-   padding-right: 100px;
-   display: flex;
-   background-color: rgb(248, 248, 248);
-   vertical-align: middle;
+    padding-right: 100px;
+    display: flex;
+    background-color: rgb(248, 248, 248);
+    vertical-align: middle;
 }
-.cards .card{
+
+.cards .card {
     box-shadow: 2px 2px 6px gray;
     margin-left: 40px;
     background-color: white;
     border-radius: 8PX;
     height: 100%;
-   width: 100%;
+    width: 100%;
 }
-.cards .card img{
+
+.cards .card img {
     width: 100%;
 
 }
-.cards .card-3{margin-left: 0;}
-.cards .card .img{  
-   height: 100%;
-   width: 100%;
-   margin: 0;
-   border-radius: 15px;
-   vertical-align: middle;
+
+.cards .card-3 {
+    margin-left: 0;
+}
+
+.cards .card .img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 15px;
+    vertical-align: middle;
     border-style: none;
 }
-.cards .card .text{
+
+.cards .card .text {
     padding: 15px;
 }
-.footer{}
+
+.footer {
+    background-color: rgb(248, 248, 248);
+    padding-right: 100px;
+    padding-left: 100px;
+    display: flex;
+    
+}
+
+.contact{
+    height: 100%;
+    margin-right: 30px;
+    display: inline;
+}
+.info{
+    height: 100%;
+    margin-right: 30px;
+}
+.prof{
+    margin-right:  30px;
+    height: 100%;
+}
+.whts{
+    margin-right: 30px;
+    height: 100%;
+}
+
+.footer ul{
+    padding-right: 0;
+}
+.footer ul li{
+    list-style-type: none;
+}
+.footer .contact .whts i {
+    display: flex;
+   
+   border-radius: 50%;
+}
+
+.whts button{
+    background: #7e57c6;
+    margin-right: 8px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: none;
+    padding: 0 20px;
+    font-family: inherit;
+    font-size: 15px;
+   color: #fff;
+}
