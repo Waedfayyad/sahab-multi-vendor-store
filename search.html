@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="search.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="header-line">
+    </div>
+
+    <!-- navbar  -->
+    <div class="container-md">
+
+        <nav class="container-md navbar navbar-expand-lg navbar-light bg-light d-flex mt-2 w-100">
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand " href="https://accord.ps"> <img
+                        src="C:\xampp\htdocs\sahab-multi-vendor-store\rasel-logo (1).png" width="150" height="50"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class=" navbar-nav ml-auto mt-2 mt-lg-0">
+
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary me-4 text-decoration-none d-sm-block" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            التصنيفات
+                        </a>
+                        <div id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                            id="website_categories">
+                            <div class="col-md-12">
+                                <div class="row" categories="">
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-up"></i> </span>
+                                            <div class="dropdown-item parent checked" data-source="category_name"
+                                                data-id="1" data-action="getChildrenCategory">الأثاث المنزلي</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children="">
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=240"
+                                                        data-id="240">فرشات نوم</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=274"
+                                                        data-id="274">ملحقات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=273" data-id="273">فرش
+                                                        عربي</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=268"
+                                                        data-id="268">طاولات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=229" data-id="229">أطقم
+                                                        كنب</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=96" data-id="96">أطقم
+                                                        نوم</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-up"></i> </span>
+                                            <div class="dropdown-item parent checked" data-source="category_name"
+                                                data-id="2" data-action="getChildrenCategory">الأجهزة الكهربائية
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children="">
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=275"
+                                                        data-id="275">جوالات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=269" data-id="269">فروش
+                                                        غاز</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=153"
+                                                        data-id="153">الثلاجات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=155"
+                                                        data-id="155">الغسالات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=211"
+                                                        data-id="211">شاشات التلفاز</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=162"
+                                                        data-id="162">مكيفات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=146"
+                                                        data-id="146">أفران</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=148"
+                                                        data-id="148">خلاطات ومفارم</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=242"
+                                                        data-id="242">دفايات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=154"
+                                                        data-id="154">فريزر</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=156"
+                                                        data-id="156">مكواة</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=161"
+                                                        data-id="161">مكنسة كهربائية</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=241"
+                                                        data-id="241">شفاطات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=243"
+                                                        data-id="243">كمكم</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=244" data-id="244">سخان
+                                                        المياه</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=266"
+                                                        data-id="266">ملحقات</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-up"></i> </span>
+                                            <div class="dropdown-item parent checked" data-source="category_name"
+                                                data-id="3" data-action="getChildrenCategory">صالات الأفراح</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children="">
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=3&amp;child_id=233" data-id="233">قاعة
+                                                        سهرة شباب</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=3&amp;child_id=232" data-id="232">قاعة
+                                                        حنة</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=3&amp;child_id=231" data-id="231">قاعة
+                                                        خطوبة</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=3&amp;child_id=21" data-id="21">قاعة
+                                                        أفراح</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="4"
+                                                data-action="getChildrenCategory">بدل الزفاف</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="5"
+                                                data-action="getChildrenCategory">الكوافيرات</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="6"
+                                                data-action="getChildrenCategory">بطاقات الأفراح</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="7"
+                                                data-action="getChildrenCategory">تزيين الورود</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="8"
+                                                data-action="getChildrenCategory">تأجير الباصات</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="9"
+                                                data-action="getChildrenCategory">استوديوهات التصوير
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="10"
+                                                data-action="getChildrenCategory">المطابخ</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="11"
+                                                data-action="getChildrenCategory">الفنادق</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="13"
+                                                data-action="getChildrenCategory">فنون استعراضية</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="14"
+                                                data-action="getChildrenCategory">المسارح</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="16"
+                                                data-action="getChildrenCategory">بدل رجالي</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="245"
+                                                data-action="getChildrenCategory">حلويات الأفراح</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="248"
+                                                data-action="getChildrenCategory">مفروشات</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="283"
+                                                data-action="getChildrenCategory">أدوات منزلية</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <div id="n1" class=" text-center d-flex ">
+                    <div class="m-2 p-2">
+                        <a class="d-none d-sm-block" href="https://partner.accordpal.com" target="_blank">
+                            <button id="btn1" type="button" class="btn btn-success"><i class="fa fa-plus-circle">سجل
+                                    كمورد
+                                </i></button>
+                        </a>
+                    </div>
+
+                    <div class=" d-flex">
+                        <div class="m-2 p-2">
+                            <a class="text-decoration-none " href="https://accord.ps/search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <p class="text-nowrap  "> البحث
+                                </p>
+                            </a>
+                        </div>
+                        <div class="m-2 p-2 ">
+                            <a class="text-decoration-none position-relative" href="https://accord.ps/wishlist">
+                                <i class="fa fa-heart" aria-hidden="true"><span id="e"
+                                        class="position-absolute top-0 start-30 translate-middle badge rounded-pill ">
+                                        0
+                                        <span class="visually-hidden">unread messages</span></i>
+                                <p class="text-nowrap "> المفضلة </p>
+                            </a>
+                        </div>
+                        <div class="m-2 p-2">
+                            <a class="text-decoration-none position-relative" href="https://accord.ps/cart">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"><span id="e"
+                                        class="position-absolute top-0 start-80 translate-middle badge rounded-pill">
+                                        0
+                                        <span class="visually-hidden">unread messages</span></i>
+                                <p class="text-nowrap "> سلة المشتريات </p>
+                            </a>
+                        </div>
+                        <div class="m-2 p-2">
+                            <a class="text-decoration-none" href="https://accord.ps/login">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                <p class="text-nowrap "> تسجيل الدخول </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- search  -->
+    <div class="search-block">
+        <div class="container-md">
+            <div id="s" class="input-group rounded">
+                <span class="input-group-text border-0 rounded" id="search-addon">
+                    <i class="fa fa-search" aria-hidden="true"></i></span>
+                <input type="search" class="form-control rounded" placeholder="البحث" aria-label="Search"
+                    aria-describedby="search-addon" />
+
+            </div>
+        </div>
+    </div>
+    <!-- catguorise -->
+    <div class="container-md  mt-3 ">
+        <div class="categories-block" id="website_categories_block_search">
+            <div class="items d-flex my-5 ">
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=1"
+                        data-action="clicked_category" data-id="1"><img src="c0.png">
+                        <p>الاثاث المنزلي </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=2"
+                        data-action="clicked_category" data-id="2">
+                        <img src="c1.png">
+                        <p> الاجهزة الكهربائية </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=3"
+                        data-action="clicked_category" data-id="3">
+                        <img src="c2.png">
+                        <p>صالات الافراح </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=4"
+                        data-action="clicked_category" data-id="4">
+                        <img src="c3.png">
+                        <p>بدل الزفاف </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=5"
+                        data-action="clicked_category" data-id="5">
+                        <img src="c4.png">
+                        <p>الكوافيرات </p>
+                    </a>
+
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=6"
+                        data-action="clicked_category" data-id="6">
+                        <img src="c5.png">
+                        <p>بطاقات الافراح </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=7"
+                        data-action="clicked_category" data-id="7">
+                        <img src="c6.png">
+                        <p>تزيين الورود </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=8"
+                        data-action="clicked_category" data-id="8">
+                        <img src="c7.png">
+                        <p>تاجير الباصات </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=9"
+                        data-action="clicked_category" data-id="9">
+                        <img src="c8.png">
+                        <p>استديوهات التصوير </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=10"
+                        data-action="clicked_category" data-id="10">
+                        <img src="c9.png">
+                        <p>المطابخ </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=11"
+                        data-action="clicked_category" data-id="11">
+                        <img src="c10.png">
+                        <p>الفنادق </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=13"
+                        data-action="clicked_category" data-id="13">
+                        <img src="c11.png">
+                        <p>فنون استعراضية </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=14"
+                        data-action="clicked_category" data-id="14">
+                        <img src="c12.png">
+                        <p>المسارح </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=16"
+                        data-action="clicked_category" data-id="16">
+                        <img src="c13.png">
+                        <p> بدل رجالي </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=245"
+                        data-action="clicked_category" data-id="245">
+                        <img src="c14.png">
+                        <p>حلويات الافراح </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=248"
+                        data-action="clicked_category" data-id="248">
+                        <img src="c15.png">
+                        <p>مفروشات </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=283"
+                        data-action="clicked_category" data-id="283">
+                        <img src="c16.png">
+                        <p>ادوات منزلية </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <img src="categories.png">
+                    <p>كل التصنيفات </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- المحتوى -->
+    <div class="bg-light">
+        <div class="container-md  mt-3 ">
+            <div class="row d-flex">
+                <img class="im" src="adv-search3.jpg">
+            </div>
+        </div>
+    </div>
+
+<div class="b">
+    <div class="container-md mt-4 bg-Light mb-0">
+        <div class=" row ">
+            <div  class=" col-9  d-flex position-relative">
+                <div class="filters d-flex ">
+                    <span id="text_order_search">الترتيب حسب </span> <span id="filters_items_value"></span>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu text-right " aria-labelledby="dropdownMenuButton" style="width: 185px" id="filters_items">
+                            <a class="dropdown-item" id="price_asc">الأقل سعراً</a>
+                            <a class="dropdown-item" id="price_desc">الأعلى سعراً</a>
+                            <a class="dropdown-item" id="most_discount">الأكثر خصومات</a>
+                            <a class="dropdown-item" id="item_desc">الأحدث</a>
+                            <a class="dropdown-item" id="item_asc">الأقدم</a>
+                        </div>
+                    </div>
+                    <div id="filter_price_from_to d-flex">
+                        <div class="form-group from-to ">
+                            <span class="span-filter-price-from-to d-flex">
+                                <input class="form-control  mx-2" type="number" name="less_price" id="less_price" placeholder="الأقل سعراً" autocomplete="off">
+                                <span class="to  mx-2">إلى</span>
+                                <input class="form-control  mx-1" type="number" name="large_price" id="large_price" placeholder="الأعلى سعراً" autocomplete="off">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="number-items position-absolute start-0 ms-4" id="total_number_items">4271 صنف</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--card -->
+    <div class="container-md  mt-3">
+        <div class=" row d-flex">
+            <div id="card" class=" col-9 bg-Light ">
+             
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0"><img src="adv-home.jpg"></div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0"><img src="adv-home.jpg"></div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 d-flex">
+                        <div class="col-md-4">
+                            <img src="cr1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex mt-2 position-relative">
+                                    <a href="https://accord.ps/search?category_id=3"
+                                        class="a-parent-category-name text-decoration-none"
+                                        data-source="parent_category_id" data-id="3">
+                                        <span class="parent-category-name" data-source="parent_category_name">صالات
+                                            الأفراح</span>
+                                    </a>
+                                    <span class="space-between-categories"> - </span>
+                                    <a href="https://accord.ps/search?category_id=3&amp;child_id=21"
+                                        class="a-category-name text-decoration-none" data-source="category_id"
+                                        data-id="21">
+                                        <span class="category-name" data-source="category_name">قاعة أفراح</span>
+                                    </a>
+                                    <!-- Button trigger modal -->
+                                    <span class="position-absolute top-0 start-0 btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </span>
+                    
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex">
+                                                     <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                    <h5 class="modal-title w-100" id="exampleModalLabel" >أهلاً وسهلاً بك في أكورد</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">تسجيل الدخول</button>
+                                                    <button type="button" class="btn btn-primary">تسجيل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <a href="https://accord.ps/products/5031" class="a-item-name text-decoration-none"
+                                        data-source="item_id" data-id="5031" data-out-of-stock="0">
+                                        <h4 class="item-name ml-2" data-source="item_name">صالة اللوتس</h4>
+                                        <h6 style="font-size: 14px" class="text-muted d-none" data-source="price_name">
+                                        </h6>
+                                    </a>
+                                    <h6 style="cursor: pointer" data-source="supplier_name" data-toggle="modal"
+                                        data-target="#notLoginModal"> ( صالة اللوتس للأفراح ) </h6>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <p class="description" data-source="description"><span>من شهر 11 </span><span>إلى
+                                            شهر 4، </span><span>غزة، </span><span>مكيَف، </span><span>600 كرسي،
+                                        </span><span>68 طاولة</span></p>
+                                </div>
+                                <span class="price" data-source="price">₪4605</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الجانب -->
+            <div class="col-md-3 pt-3 pb-3 pl-0">
+                <div class="advertising-items" id="first_advertisings_search_page">
+                    <div class="gs shadow p-3 mb-5 bg-body rounded" items="">
+                        <div class="g" item="">
+                            <a href="https://accord.ps/products/15055" data-source="item_id" data-id="15055"  class=" text-decoration-none"
+                                data-out-of-stock="0">
+                                <div class="image  w-50 h-100">
+                                    <img src="1.jpg" class="img position-relative"
+                                        style="background-image: url(&quot;https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg&quot;);">
+                                </div>
+                            </a>
+                            <div class="details"><a href="https://accord.ps/products/15055" data-source="item_id" class="text-decoration-none"
+                                    data-id="15055" data-out-of-stock="0">
+                                    <div class="name" data-source="item_name">طاولة وسط_20026</div>
+                                </a><a class="supplier-name d-none text-decoration-none" href="https://accord.ps/suppliers/755"
+                                    data-source="supplier_id" data-id="755">
+                                    <h6 data-source="supplier_name"> ( زان هاوس - Zan House ) </h6>
+                                </a>
+                                <div class="d-flex">
+                                    <div class="price" data-source="price">₪1636</div>
+                                    <div class="original-price">
+                                        <del data-source="original_price">₪1800</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="g" item="">
+                            <a href="https://accord.ps/products/13364" data-source="item_id" data-id="13364"
+                                data-out-of-stock="0" class="text-decoration-none">
+                                <div class="image  w-50 h-100">
+                                    <img src="2.jpg" class="img position-relative"
+                                        style="background-image: url(&quot;https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg&quot;);">
+                                </div>
+                            </a>
+                            <div class="details"><a href="https://accord.ps/products/13364" data-source="item_id" class="text-decoration-none"
+                                    data-id="13364" data-out-of-stock="0">
+                                    <div class="name" data-source="item_name">طاولة وسط - 20016</div>
+                                </a><a class="supplier-name d-none text-decoration-none"
+                                    href="https://accord.ps/suppliers/755" data-source="supplier_id" data-id="755">
+                                    <h6 data-source="supplier_name"> ( زان هاوس - Zan House ) </h6>
+                                </a>
+                                <div class="d-flex">
+                                    <div class="price" data-source="price">₪1400</div>
+                                    <div class="original-price">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="g" item="">
+                            <a href="https://accord.ps/products/7942" data-source="item_id" data-id="7942"
+                                data-out-of-stock="0" class="text-decoration-none">
+                                <div class="image  w-50 h-100">
+                                    <img src="3.jpg" class="img position-relative"
+                                        style="background-image: url(&quot;https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg&quot;);">
+                                </div>
+                            </a>
+                            <div class="details"><a href="https://accord.ps/products/7942" data-source="item_id" class="text-decoration-none"
+                                    data-id="7942" data-out-of-stock="0">
+                                    <div class="name" data-source="item_name">W-507</div>
+                                </a><a class="supplier-name text-decoration-none" href="https://accord.ps/suppliers/92"
+                                    data-source="supplier_id" data-id="92">
+                                    <h6 data-source="supplier_name"> ( سنتر اجمل العرائس ) </h6>
+                                </a>
+                                <div class="d-flex">
+                                    <div class="price" data-source="price">₪750</div>
+                                    <div class="original-price">
+                                        <del data-source="original_price">₪800</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="g" item="">
+                            <a href="https://accord.ps/products/8560" data-source="item_id" data-id="8560"
+                                data-out-of-stock="0" class="text-decoration-none">
+                                <div class="image  w-50 h-100">
+                                    <img src="4.jpg" class="img position-relative"
+                                        style="background-image: url(&quot;https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg&quot;);">
+                                </div>
+                            </a>
+                            <div class="details"><a href="https://accord.ps/products/8560" data-source="item_id" class="text-decoration-none"
+                                    data-id="8560" data-out-of-stock="0">
+                                    <div class="name" data-source="item_name">فيديو سهرة الشباب</div>
+                                </a><a class="supplier-name text-decoration-none" href="https://accord.ps/suppliers/652"
+                                    data-source="supplier_id" data-id="652">
+                                    <h6 data-source="supplier_name"> ( استوديو غرام ) </h6>
+                                </a>
+                                <div class="d-flex">
+                                    <div class="price" data-source="price">₪106</div>
+                                    <div class="original-price">
+                                        <del data-source="original_price">₪110</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="advertising-items text-decoration-none" id="first_advertisings_search_page">
+                    <div class="advertising-items-small d-none d-sm-block" id="second_advertisings_search_page">
+
+                        <div class="gs shadow p-3 mb-5 bg-body rounded text-decoration-none" items="">
+                            <div class="text-center pt-1 pb-2 bg-secondary text-white" id="supplier_name_of_advertising">شركة آت هوم للأثاث
+                                العصري </div>
+                            <div class="g" item="">
+                                <a class="d-flex text-decoration-none" href="https://accord.ps/products/15959"
+                                    data-source="item_id" data-id="15959">
+                                    <div class="image  w-50 h-100">
+                                        <img src="5.jpg" class="img position-relative"
+                                            style="background-image: url(&quot;https://accordpal.com/storage/app/public/31413/conversions/ab0bc4b9440562bfaf2b1049b1aa5dda-thumb.jpg&quot;);">
+                                    </div>
+                                    <div class="details">
+                                        <div class="d-flex">
+                                            <div data-source="price" class="price">₪3900</div>
+                                            <div class="original-price">
+                                                <del data-source="original_price">₪4200</del>
+                                            </div>
+                                        </div>
+
+                                        <div class="name" data-source="item_name">غرفة نوم اسطنبول - 2010058</div>
+                                        <div class="supplier-name" data-source="supplier_name"> ( شركة آت هوم للأثاث
+                                            العصري ) </div>
+                                    </div>
+                                </a>
+                                <div class="description" data-source="description"><span>ساندويش + mdf،
+                                    </span><span>محلي، </span><span>قشرة زان، </span><span>6 قطعة</span></div>
+                            </div>
+                            <hr class="mt-1 mb-1">
+
+                            <div class="g" item="">
+                                <a class="d-flex text-decoration-none" href="https://accord.ps/products/15682"
+                                    data-source="item_id" data-id="15682">
+                                    <div class="image  w-50 h-100">
+                                        <img src="6.jpg" class="img position-relative"
+                                            style="background-image: url(&quot;https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg&quot;);">
+                                    </div>
+                                    <div class="details">
+                                        <div class="d-flex">
+                                            <div data-source="price" class="price">₪181</div>
+                                            <div class="original-price">
+                                                <del data-source="original_price">₪200</del>
+                                            </div>
+                                        </div>
+
+                                        <div class="name" data-source="item_name">ساعة_100183</div>
+                                        <div class="supplier-name" data-source="supplier_name"> ( شركة آت هوم للأثاث
+                                            العصري ) </div>
+                                    </div>
+                                </a>
+                                <div class="description" data-source="description"></div>
+                            </div>
+                            <hr class="mt-1 mb-1">
+
+                            <div class="g" item="">
+                                <a class="d-flex text-decoration-none" href="https://accord.ps/products/15681" data-source="item_id"
+                                    data-id="15681">
+
+                                    <div class="image  w-50 h-100">
+                                        <img src="7.jpg" class="img position-relative"
+                                            style="background-image: url(&quot;https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg&quot;);">
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="d-flex">
+                                            <div data-source="price" class="price">₪137</div>
+                                            <div class="original-price">
+                                                <del data-source="original_price">₪150</del>
+                                            </div>
+                                        </div>
+
+                                        <div class="name" data-source="item_name">كرسي سفرة_30009</div>
+                                        <div class="supplier-name" data-source="supplier_name"> ( شركة آت هوم للأثاث
+                                            العصري ) </div>
+                                    </div>
+                                </a>
+                                <div class="description" data-source="description"></div>
+                            </div>
+                            <hr class="mt-1 mb-1">
+
+                            <div class="g" item="">
+                                <a class="d-flex text-decoration-none" href="https://accord.ps/products/15680" data-source="item_id"
+                                    data-id="15680">
+
+                                    <div class="image  w-50 h-100">
+                                        <img src="8.jpg" class="img position-relative"
+                                            style="background-image: url(&quot;https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg&quot;);">
+                                    </div>
+
+                                    <div class="details">
+                                        <div class="d-flex">
+                                            <div data-source="price" class="price">₪91</div>
+                                            <div class="original-price">
+                                                <del data-source="original_price">₪100</del>
+                                            </div>
+                                        </div>
+
+                                        <div class="name" data-source="item_name">كرسي سفرة_30006</div>
+                                        <div class="supplier-name" data-source="supplier_name"> ( شركة آت هوم للأثاث
+                                            العصري ) </div>
+                                    </div>
+                                </a>
+                                <div class="description" data-source="description"></div>
+                            </div>
+                            <hr class="mt-1 mb-1">
+
+
+                        </div>
+                        <img class="adv-call-center w-100" src="s5.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- الانتقالات -->
+            <div class="container-md position-relative ">
+                <div class="row d-flex ">
+                    <div id="total_items" class="text-left ">
+                        <p class="text-center mt-1">تم عرض 50 صنف من 4264 صنف</p>
+                    </div>
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination justify-content-center ">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            <li><a href="#page-1" class="page-link">1</a></li>
+                            <li><a href="#page-2" class="page-link">2</a></li>
+                            <li><a href="#page-3" class="page-link">3</a></li>
+                            <li><a href="#page-4" class="page-link">4</a></li>
+                            <li><a href="#page-5" class="page-link">5</a></li>
+                            <li class=""><span class="ellipse clickable">…</span>
+                            </li>
+                            <li><a href="#page-85" class="page-link">85</a></li>
+                            <li><a href="#page-86" class="page-link">86</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+            <div class="container-md ">
+                <div class="row d-flex">
+                    <img src="call-center.jpg">
+                </div>
+            </div>
+            <div class="header-line mt-3">
+            </div>
+            <div class="container-md ">
+                <div class="row d-flex mt-3 ">
+
+
+
+                    <div class="col-md-3 ">
+
+                        <div class="footer-contacts1">
+                            <h4> للاتصال بنا </h4>
+                            <p> يسرنا تواصلك معنا من خلال أي من القنوات المتاحة. </p>
+                        </div>
+                        <div class="fc d-flex">
+                            <div id="f" class="footer-contacts2 ms-3">
+                                <div>
+                                    <h6 class="font-weight-bold">أرقام التواصل</h6>
+                                    <p>1700400600</p>
+                                </div>
+                                <div class="mt-2">
+                                    <h6 class="font-weight-bold">العنوان</h6>
+                                    <p>فلسطين، غزة، مقابل البوابة الشمالية لجامعة الأزهر، مجمع الرؤيا التجاري</p>
+                                </div>
+                            </div>
+                            <div class="footer-contacts2">
+                                <div>
+                                    <h6 class="font-weight-bold">البريد الإلكتروني</h6>
+                                    <p class="en">info@accord.ps</p>
+                                </div>
+                                <div class="mt-2">
+                                    <h6 class="font-weight-bold">ساعات العمل</h6>
+                                    <p>السبت - الخميس<br>9:00 صباحاً - 3:30 مساءً</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h4>المعلومات </h4>
+                        <ul class="info">
+                            <li>من نحن؟</li>
+                            <li>سياسة الخصوصية</li>
+                            <li>للاتصال بنا</li>
+                            <li>الأسئلة الشائعة</li>
+                            <li>مورد جديد</li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="col-md-3 ">
+                        <h4 class="text-nowrap"> الملف الشخصي</h4>
+                        <ul class="prof">
+                            <li>التسجيل</li>
+                            <li>تسجيل الدخول</li>
+                            <li>المفضلة</li>
+                            <li>سلة المشتريات</li>
+                            <li>البحث</li>
+                        </ul>
+                    </div>
+                    <!-- class="whts " -->
+                    <div class="col-md-3 ">
+                        <h4>قائمة الواتس أب</h4>
+                        <p>انضم إلى قائمة الواتس أب الخاصة بالمنصة للبقاء على إطلاع بأحدث الخصومات والعروض الخاصة.</p>
+                        <input type="number" placeholder="رقم الواتس اب ....">
+                        <button>الاشتراك</button>
+                        <p>وسائل التواصل الإجتماعي</p>
+                        <i class="fa fa-facebook" aria-hidden="true" style="background:#3c5a99;"></i>
+                        <i class="fa fa-instagram" aria-hidden="true" style="background:#815dc7 ;"></i>
+                    </div>
+                    <p class="text-center"> Powered by Accord - Accord Group for Marketing & Trade</p>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="search.js"></script>
+</body>
+
+</html>

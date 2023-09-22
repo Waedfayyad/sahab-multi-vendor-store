@@ -5,253 +5,721 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الصفحة الرئيسية </title>
+    <link rel="stylesheet" href="main.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="colores"></div>
+    <div class="header-line">
+    </div>
+    <!-- navbar  -->
+    <div class="container-md">
 
-    <nav>
-        <img src="C:\xampp\htdocs\sahab-multi-vendor-store\rasel-logo (1).png" width="150" height="50">
-        <div class="left">
-            <button><i class="fa fa-plus-circle">سجل كمورد </i></button>
-            <div><i class="fa fa-search" aria-hidden="true"></i>
-                <p> البحث </p>
-            </div>
-            <div><i class="fa fa-heart" aria-hidden="true"></i>
-                <p> المفضلة </p>
-            </div>
-            <div><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <p> سلة المشتريات </p>
-            </div>
-            <div><i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <p> تسجيل الدخول </p>
-            </div>
-        </div>
-
-    </nav>
-    <div class="main">
-        <div class="welcome">
+        <nav class="container-md navbar navbar-expand-lg navbar-light bg-light d-flex mt-2">
             <div>
-                <h2>كل المراحب والله</h2>
-                <p>ضيفوا البيانات مشان تتمتعوا بالعديد من الميزات</p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand " href="https://accord.ps"> <img
+                        src="C:\xampp\htdocs\sahab-multi-vendor-store\rasel-logo (1).png" width="150" height="50"></a>
             </div>
-            <div><label>رقم الجوال</label>
-                <input type="number" placeholder=" ادخل رقم الجوال الخاص بك"></p>
-            </div>
-            <div><label> الاسم بالكامل</label>
-                <input type="text" placeholder=" ادخل اسمك بالكامل "> </p>
-            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class=" navbar-nav ml-auto mt-2 mt-lg-0">
 
-            <button> ارسال </button>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary me-4 text-decoration-none d-sm-block" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            التصنيفات
+                        </a>
+                        <div id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                            id="website_categories">
+                            <div class="col-md-12">
+                                <div class="row" categories="">
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-up"></i> </span>
+                                            <div class="dropdown-item parent checked" data-source="category_name"
+                                                data-id="1" data-action="getChildrenCategory">الأثاث المنزلي</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children="">
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=240"
+                                                        data-id="240">فرشات نوم</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=274"
+                                                        data-id="274">ملحقات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=273" data-id="273">فرش
+                                                        عربي</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=268"
+                                                        data-id="268">طاولات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=229" data-id="229">أطقم
+                                                        كنب</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=1&amp;child_id=96" data-id="96">أطقم
+                                                        نوم</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-        </div>
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-up"></i> </span>
+                                            <div class="dropdown-item parent checked" data-source="category_name"
+                                                data-id="2" data-action="getChildrenCategory">الأجهزة الكهربائية
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children="">
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=275"
+                                                        data-id="275">جوالات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=269" data-id="269">فروش
+                                                        غاز</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=153"
+                                                        data-id="153">الثلاجات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=155"
+                                                        data-id="155">الغسالات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=211"
+                                                        data-id="211">شاشات التلفاز</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=162"
+                                                        data-id="162">مكيفات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=146"
+                                                        data-id="146">أفران</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=148"
+                                                        data-id="148">خلاطات ومفارم</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=242"
+                                                        data-id="242">دفايات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=154"
+                                                        data-id="154">فريزر</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=156"
+                                                        data-id="156">مكواة</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=161"
+                                                        data-id="161">مكنسة كهربائية</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=241"
+                                                        data-id="241">شفاطات</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=243"
+                                                        data-id="243">كمكم</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=244" data-id="244">سخان
+                                                        المياه</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=2&amp;child_id=266"
+                                                        data-id="266">ملحقات</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-    </div>
-    <div class="catg">
-        <h1>اكتشف أصنافنا </h1>
-        <div class="items">
-            <div class="item">
-                <img src="c0.png">
-                <p>الاثاث المنزلي </p>
-            </div>
-            <div class="item">
-                <img src="c1.png">
-                <p> الاجهزة الكهربائية </p>
-            </div>
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-up"></i> </span>
+                                            <div class="dropdown-item parent checked" data-source="category_name"
+                                                data-id="3" data-action="getChildrenCategory">صالات الأفراح</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children="">
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=3&amp;child_id=233" data-id="233">قاعة
+                                                        سهرة شباب</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=3&amp;child_id=232" data-id="232">قاعة
+                                                        حنة</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=3&amp;child_id=231" data-id="231">قاعة
+                                                        خطوبة</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a class="dropdown-item child"
+                                                        href="/search?category_id=3&amp;child_id=21" data-id="21">قاعة
+                                                        أفراح</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-            <div class="item">
-                <img src="c2.png">
-                <p>صالات الافراح </p>
-            </div>
-            <div class="item">
-                <img src="c3.png">
-                <p>بدل الزفاف </p>
-            </div>
-            <div class="item">
-                <img src="c4.png">
-                <p>الكوافيرات </p>
-            </div>
-            <div class="item">
-                <img src="c5.png">
-                <p>بطاقات الافراح </p>
-            </div>
-            <div class="item">
-                <img src="c6.png">
-                <p>تزيين الورود </p>
-            </div>
-            <div class="item">
-                <img src="c7.png">
-                <p>تاجير الباصات </p>
-            </div>
-            <div class="item">
-                <img src="c8.png">
-                <p>استديوهات التصوير </p>
-            </div>
-            <div class="item">
-                <img src="c9.png">
-                <p>المطابخ </p>
-            </div>
-            <div class="item">
-                <img src="c10.png">
-                <p>الفنادق </p>
-            </div>
-            <div class="item">
-                <img src="c11.png">
-                <p>فنون استعراضية </p>
-            </div>
-            <div class="item">
-                <img src="c12.png">
-                <p>المسارح </p>
-            </div>
-            <div class="item">
-                <img src="c13.png">
-                <p> بدل رجالي </p>
-            </div>
-            <div class="item">
-                <img src="c14.png">
-                <p>حلويات الافراح </p>
-            </div>
-            <div class="item">
-                <img src="c15.png">
-                <p>مفروشات </p>
-            </div>
-            <div class="item">
-                <img src="c16.png">
-                <p>ادوات منزلية </p>
-            </div>
-            <div class="item">
-                <img src="categories.png">
-                <p>كل التصنيفات </p>
-            </div>
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="4"
+                                                data-action="getChildrenCategory">بدل الزفاف</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
 
-        </div>
-    </div>
-    <div class="cards">
-        <div class="card">
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="5"
+                                                data-action="getChildrenCategory">الكوافيرات</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
 
-            <img src="adv1-2.jpeg">
-            <div class="text">
-                <h3>اكورد القصة وبناء الثقة</h3>
-                <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم المقبلين
-                    على
-                    الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="adv2.jpg">
-            <div class="text">
-                <h3>الشراكات، الطريق للراحة والتحكم</h3>
-                <p> واصل مع أفضل جهات التمويل الشريكة مع أكورد في غزة
-                    من خلال إضافة خيار التقسيط إلى خيارات الدفع الكاش المتوفر لدينا، يمكننا توفير تجربة تسوق أكثر
-                    شمولية،
-                    ومنح عملائنا مزيداً من الراحة والتحكم والوصول إلى خيارات تمويل أكثر.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="adv3.jpg">
-            <div class="text">
-                <h3>المنتجات وقوة موردينا</h3>
-                <p>الأفضل أمام عينك
-                    مع وجود خطة تمكن الفريق من جلب منتجات عديدة بمواصفات حقيقية، كان لا بد من وجود العديد من الاعتبارات
-                    التي</p>
-            </div>
-        </div>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <div class="img"><img src="adv-2.jpg"></div>
-        </div>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <img src="art1.jpg">
-            <div class="text">
-                <h3>اكورد القصة وبناء الثقة</h3>
-                <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم المقبلين
-                    على الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="art2.jpg">
-            <div class="text">
-                <h3>اكورد القصة وبناء الثقة</h3>
-                <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم المقبلين
-                    على الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="art3.jpg">
-            <div class="text">
-                <h3>اكورد القصة وبناء الثقة</h3>
-                <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم المقبلين
-                    على الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
-            </div>
-        </div>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <img src="temporary-2.png">
-            <div class="text">
-                <h3>اكورد القصة وبناء الثقة</h3>
-                <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم المقبلين
-                    على الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="permanent-2.png">
-            <div class="text">
-                <h3>اكورد القصة وبناء الثقة</h3>
-                <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم المقبلين
-                    على الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="individual-offers.png">
-            <div class="text">
-                <h3>اكورد القصة وبناء الثقة</h3>
-                <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم المقبلين
-                    على الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
-            </div>
-        </div>
-    </div>
-    <div class="colores1"></div>
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="6"
+                                                data-action="getChildrenCategory">بطاقات الأفراح</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
 
-        <div class="footer">
-          
-            <div class="contact">
-              
-                 <div class="footer-contacts1">
-                    <h2> للاتصال بنا </h2>
-                    <p> يسرنا تواصلك معنا من خلال أي من القنوات المتاحة. </p>
-                 </div>
-                 <div class="fc">
-                  <div class="footer-contacts2">
-                    <div>
-                        <h4 class="font-weight-bold">أرقام التواصل</h4>
-                        <p>1700400600</p>
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="7"
+                                                data-action="getChildrenCategory">تزيين الورود</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="8"
+                                                data-action="getChildrenCategory">تأجير الباصات</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="9"
+                                                data-action="getChildrenCategory">استوديوهات التصوير
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="10"
+                                                data-action="getChildrenCategory">المطابخ</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="11"
+                                                data-action="getChildrenCategory">الفنادق</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="13"
+                                                data-action="getChildrenCategory">فنون استعراضية</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="14"
+                                                data-action="getChildrenCategory">المسارح</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="16"
+                                                data-action="getChildrenCategory">بدل رجالي</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="245"
+                                                data-action="getChildrenCategory">حلويات الأفراح</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="248"
+                                                data-action="getChildrenCategory">مفروشات</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pr-0" category="">
+                                        <div class="col-md-3 pr-0">
+                                            <span class="dropdown-item-direction" data-source="direction"><i
+                                                    class="fa fa-angle-double-down"></i> </span>
+                                            <div class="dropdown-item parent" data-source="category_name" data-id="283"
+                                                data-action="getChildrenCategory">أدوات منزلية</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row" children=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-weight-bold">البريد الإلكتروني</h4>
-                        <p class="en">info@accord.ps</p>
+                </ul>
+                <div id="n1" class=" text-center d-flex ">
+                    <div class="m-2 p-2">
+                        <a class="d-none d-sm-block" href="https://partner.accordpal.com" target="_blank">
+                            <button id="btn1" type="button" class="btn btn-success"><i class="fa fa-plus-circle">سجل
+                                    كمورد
+                                </i></button>
+                        </a>
                     </div>
-                    <div class="mt-2">
-                        <h4 class="font-weight-bold">العنوان</h4>
-                        <p>فلسطين، غزة، مقابل البوابة الشمالية لجامعة الأزهر، مجمع الرؤيا التجاري</p>
+
+                    <div class=" d-flex text-secondary">
+                        <div class="m-2 p-2">
+                            <a class="text-decoration-none " href="https://accord.ps/search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <p class="text-nowrap  "> البحث
+                                </p>
+                            </a>
+                        </div>
+                        <div class="m-2 p-2 ">
+                            <a class="text-decoration-none position-relative" href="https://accord.ps/wishlist">
+                                <i class="fa fa-heart" aria-hidden="true"><span id="e"
+                                        class="position-absolute top-0 start-30 translate-middle badge rounded-pill ">
+                                        0
+                                        <span class="visually-hidden">unread messages</span></i>
+                                <p class="text-nowrap "> المفضلة </p>
+                            </a>
+                        </div>
+                        <div class="m-2 p-2">
+                            <a class="text-decoration-none position-relative" href="https://accord.ps/cart">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"><span id="e"
+                                        class="position-absolute top-0 start-80 translate-middle badge rounded-pill">
+                                        0
+                                        <span class="visually-hidden">unread messages</span></i>
+                                <p class="text-nowrap "> سلة المشتريات </p>
+                            </a>
+                        </div>
+                        <div class="m-2 p-2">
+                            <a class="text-decoration-none" href="https://accord.ps/login">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                <p class="text-nowrap "> تسجيل الدخول </p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="mt-2">
-                        <h4 class="font-weight-bold">ساعات العمل</h4>
-                        <p>السبت - الخميس<br>9:00 صباحاً - 3:30 مساءً</p>
-                    </div>
-                 </div>
                 </div>
             </div>
+        </nav>
 
-            <div class="info">
-                <h2>المعلومات </h2>
-                <ul>
+    </div>
+
+    <!-- card  -->
+    <div class="main position-relative w-100 ">
+       <div  class="container-md ">
+            <div  class="d-none d-sm-block my-3 ">
+               
+                <div id="welcome" class="welcome position-absolute top-0 start-0 mt-5  mb-5 rounded p-3 bg-white ">
+                    <div>
+                        <h2 class="text-center mt-3">كل المراحب والله</h2>
+                        <p class="text-center mt-1">ضيفوا البيانات مشان تتمتعوا بالعديد من الميزات</p>
+                    </div>
+                    <div><label class="d-block">رقم الجوال</label>
+                        <input class="d-block h-50 w-100 mt-2" type="number" placeholder=" ادخل رقم الجوال الخاص بك"></p>
+                    </div>
+                    <div><label class="d-block"> الاسم بالكامل</label>
+                        <input  class="d-block h-50 w-100 mt-2" type="text" placeholder=" ادخل اسمك بالكامل "> </p>
+                    </div>
+
+                    <button class="border-0 w-100 rounded "> ارسال </button>
+
+                </div>
+               
+            </diV>
+            
+        </div>
+    </div>
+    <!-- catguorise -->
+    <div class="container-md  mt-3 ">
+        <div class="categories-block" id="website_categories_block_search">
+            <div class="title-section position-relative">
+                <h4> اكتشف أصنافنا</h4>
+
+                <a class="d-none d-sm-block text-decoration-none text-secondary position-absolute top-70 start-0"
+                    href="https://accord.ps/categories"><span class="title-all-categories">كل التصنيفات <i
+                            class="fa fa-angle-left text-secondary"></i></span></a>
+            </div>
+            <div class="items d-flex my-5 ">
+                <div class="item">
+                    <a class="text-decoration-none text-secondary"  href="/search?category_id=1" data-action="clicked_category" data-id="1"><img src="c0.png">
+                        <p>الاثاث المنزلي </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=2" data-action="clicked_category" data-id="2">
+                        <img src="c1.png">
+                        <p> الاجهزة الكهربائية </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=3" data-action="clicked_category" data-id="3">
+                        <img src="c2.png">
+                        <p>صالات الافراح </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=4" data-action="clicked_category" data-id="4">
+                        <img src="c3.png">
+                        <p>بدل الزفاف </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=5" data-action="clicked_category" data-id="5">
+                        <img src="c4.png">
+                        <p>الكوافيرات </p>
+                    </a>
+
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=6" data-action="clicked_category" data-id="6">
+                        <img src="c5.png">
+                        <p>بطاقات الافراح </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=7" data-action="clicked_category" data-id="7">
+                        <img src="c6.png">
+                        <p>تزيين الورود </p>
+                    </a>
+                </div>
+                <div  class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=8" data-action="clicked_category" data-id="8">
+                        <img src="c7.png">
+                        <p>تاجير الباصات </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=9" data-action="clicked_category" data-id="9">
+                        <img src="c8.png">
+                        <p>استديوهات التصوير </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=10" data-action="clicked_category" data-id="10">
+                        <img src="c9.png">
+                        <p>المطابخ </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=11" data-action="clicked_category" data-id="11">
+                        <img src="c10.png">
+                        <p>الفنادق </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=13" data-action="clicked_category" data-id="13">
+                        <img src="c11.png">
+                        <p>فنون استعراضية </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=14" data-action="clicked_category" data-id="14">
+                        <img src="c12.png">
+                        <p>المسارح </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=16" data-action="clicked_category" data-id="16">
+                        <img src="c13.png">
+                        <p> بدل رجالي </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=245" data-action="clicked_category" data-id="245">
+                        <img src="c14.png">
+                        <p>حلويات الافراح </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=248" data-action="clicked_category" data-id="248">
+                        <img src="c15.png">
+                        <p>مفروشات </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-decoration-none text-secondary" href="/search?category_id=283" data-action="clicked_category" data-id="283">
+                        <img src="c16.png">
+                        <p>ادوات منزلية </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <img src="categories.png">
+                    <p>كل التصنيفات </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="container-md">
+        <div class="row  d-flex me-5 ">
+
+            <div id="card" class="card col-md-3 ms-4 p-0 shadow-sm bg-body rounded">
+                <img src="adv1-2.jpeg">
+                <div class="card-body me-2">
+                    <h3>اكورد القصة وبناء الثقة</h3>
+                    <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم
+                        المقبلين
+                        على
+                        الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
+                </div>
+            </div>
+            <div id="card" class="card col-md-3 ms-4 p-0 shadow-sm bg-body rounded">
+                <img src="adv2.jpg">
+                <div class="card-body me-2  ">
+                    <h3> الشراكات، الطريق للراحة والتحكم</h3>
+                    <p> واصل مع أفضل جهات التمويل الشريكة مع أكورد في غزة
+                        من خلال إضافة خيار التقسيط إلى خيارات الدفع الكاش المتوفر لدينا، يمكننا توفير تجربة تسوق أكثر
+                        شمولية،
+                        ومنح عملائنا مزيداً من الراحة والتحكم والوصول إلى خيارات تمويل أكثر.</p>
+                </div>
+            </div>
+            <div id="card" class="card col-md-3  p-0 ms-4 shadow-sm bg-body rounded">
+                <img src="adv3.jpg">
+                <div class="card-body me-2 ">
+                    <h3>المنتجات وقوة موردينا</h3>
+                    <p>الأفضل أمام عينك
+                        مع وجود خطة تمكن الفريق من جلب منتجات عديدة بمواصفات حقيقية، كان لا بد من وجود العديد من
+                        الاعتبارات
+                        التي</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-md">
+        <div class="d-none d-sm-block my-3 me-5">
+            <img class="w-100"
+                src="C:\xampp\htdocs\sahab-multi-vendor-store\أكورد _ الصفحة الرئيسية_files\adv2-mobile.gif">
+        </div>
+    </div>
+    <div class="container-md">
+        <div class="row  d-flex me-5 ">
+
+            <div id="card" class="card col-md-3 ms-4 p-0 shadow-sm bg-body rounded">
+                <img src="art1.jpg">
+                <div class="card-body me-2">
+                    <h3>اكورد القصة وبناء الثقة</h3>
+                    <p>تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع التصنيفات التي تهم
+                        المقبلين
+                        على
+                        الزواج بالإضافة للعملاء الراغبين في تجديد أثاث منزلهم</p>
+                </div>
+            </div>
+            <div id="card" class="card col-md-3 ms-4 p-0 shadow-sm bg-body rounded">
+                <img src="art2.jpg">
+                <div class="card-body me-2  ">
+                    <h3> الشراكات، الطريق للراحة والتحكم</h3>
+                    <p> واصل مع أفضل جهات التمويل الشريكة مع أكورد في غزة
+                        من خلال إضافة خيار التقسيط إلى خيارات الدفع الكاش المتوفر لدينا، يمكننا توفير تجربة تسوق أكثر
+                        شمولية،
+                        ومنح عملائنا مزيداً من الراحة والتحكم والوصول إلى خيارات تمويل أكثر.</p>
+                </div>
+            </div>
+            <div id="card" class="card col-md-3  p-0 ms-4 shadow-sm bg-body rounded">
+                <img src="art3.jpg">
+                <div class="card-body me-2 ">
+                    <h3>المنتجات وقوة موردينا</h3>
+                    <p>الأفضل أمام عينك
+                        مع وجود خطة تمكن الفريق من جلب منتجات عديدة بمواصفات حقيقية، كان لا بد من وجود العديد من
+                        الاعتبارات
+                        التي</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-md">
+        <div class="row  d-flex me-5 mt-3">
+
+            <div id="card" class="card col-md-3 ms-4 p-0 shadow-sm bg-body rounded">
+                <img src="temporary-2.png">
+                <div class="card-body me-2">
+                    <h5 class="text-center">باقات صيف افراح 2023</h5>
+
+                </div>
+            </div>
+            <div id="card" class="card col-md-3 ms-4 p-0 shadow-sm bg-body rounded">
+                <img src="permanent-2.png">
+                <div class="card-body me-2  ">
+                    <h5 class="text-center"> احدث العرووض</h5>
+                </div>
+            </div>
+            <div id="card" class="card col-md-3  p-0 ms-4 shadow-sm bg-body rounded">
+                <img src="individual-offers.png">
+                <div class="card-body me-2 ">
+                    <h5 class="text-center">العروض الفردية </h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-line mt-3">
+    </div>
+    <div class="container-md ">
+        <div class="row d-flex mt-3 ">
+
+
+
+            <div class="col-md-3 ">
+
+                <div class="footer-contacts1">
+                    <h4> للاتصال بنا </h4>
+                    <p> يسرنا تواصلك معنا من خلال أي من القنوات المتاحة. </p>
+                </div>
+                <div class="fc d-flex">
+                    <div id="f" class="footer-contacts2 ms-3">
+                        <div>
+                            <h6 class="font-weight-bold">أرقام التواصل</h6>
+                            <p>1700400600</p>
+                        </div>
+                        <div class="mt-2">
+                            <h6 class="font-weight-bold">العنوان</h6>
+                            <p>فلسطين، غزة، مقابل البوابة الشمالية لجامعة الأزهر، مجمع الرؤيا التجاري</p>
+                        </div>
+                    </div>
+                    <div class="footer-contacts2">
+                        <div>
+                            <h6 class="font-weight-bold">البريد الإلكتروني</h6>
+                            <p class="en">info@accord.ps</p>
+                        </div>
+                        <div class="mt-2">
+                            <h6 class="font-weight-bold">ساعات العمل</h6>
+                            <p>السبت - الخميس<br>9:00 صباحاً - 3:30 مساءً</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <h4>المعلومات </h4>
+                <ul class="info">
                     <li>من نحن؟</li>
                     <li>سياسة الخصوصية</li>
                     <li>للاتصال بنا</li>
@@ -260,9 +728,11 @@
                 </ul>
             </div>
 
-            <div class="prof">
-                <h2> الملف الشخصي</h2>
-                <ul>
+
+
+            <div class="col-md-3 ">
+                <h4 class="text-nowrap"> الملف الشخصي</h4>
+                <ul class="prof">
                     <li>التسجيل</li>
                     <li>تسجيل الدخول</li>
                     <li>المفضلة</li>
@@ -270,9 +740,9 @@
                     <li>البحث</li>
                 </ul>
             </div>
-
-            <div class="whts">
-                <h2>قائمة الواتس أب</h2>
+            <!-- class="whts " -->
+            <div class="col-md-3 ">
+                <h4>قائمة الواتس أب</h4>
                 <p>انضم إلى قائمة الواتس أب الخاصة بالمنصة للبقاء على إطلاع بأحدث الخصومات والعروض الخاصة.</p>
                 <input type="number" placeholder="رقم الواتس اب ....">
                 <button>الاشتراك</button>
@@ -280,7 +750,14 @@
                 <i class="fa fa-facebook" aria-hidden="true" style="background:#3c5a99;"></i>
                 <i class="fa fa-instagram" aria-hidden="true" style="background:#815dc7 ;"></i>
             </div>
-        </div>    
+            <p class="text-center"> Powered by Accord - Accord Group for Marketing & Trade</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="m.js"></script>
 </body>
 
 </html>

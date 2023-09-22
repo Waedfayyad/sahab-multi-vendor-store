@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     background-color: aliceblue;
 }
@@ -15,14 +15,118 @@ body {
     margin-top: 20px;
     background: linear-gradient(to right, rgba(255, 208, 7) 0%, rgba(255, 208, 7) 12.5%, rgba(192, 156, 221, 1) 62.5%, rgba(192, 156, 221, 1) 75%);
 }
-
-nav {
-
-    padding-right: 100px;
-    padding-left: 100px;
-    margin-top: 30px;
+*/
+*{color: rgb(105, 103, 102);}
+ 
+.header-line {
+    margin: 0;
+    border: 0;
+    height: 7px;
+    background: linear-gradient(to right, rgba(255, 208, 7) 0%, rgba(255, 208, 7) 12.5%, rgba(192, 156, 221, 1) 62.5%, rgba(192, 156, 221, 1) 75%);
 }
 
+#n1 {
+    margin-right: 33%;
+   
+}
+
+nav {
+    height: 80px;
+    
+}
+
+#btn1 {
+
+    width: 150px;
+    height: 45px;
+}
+
+
+#f{
+    width: 30%;
+}
+.info {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.prof{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.items {
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 5px;
+}
+
+.item{
+    text-align: center;
+    margin-left: 30px;
+    white-space: nowrap;
+}
+.item img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px gray;
+    height: 75px;
+    width: 75px;
+    background-color: white;
+}
+.item p {
+    margin-top: 3px;
+}
+#dropdown{
+    width: 700px;
+  height: 100;
+}
+#card{
+    width: 30%;
+}
+.main {
+   
+    background-image: url(slider-2.jpg) ;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.welcome button {
+    color: rgb(255, 255, 255);
+    background-color: #7600d9;
+    height: 48px;
+}
+#welcome{
+    margin-left: 100px;
+}
+
+nav{
+    height: 80px;
+}
+#dropdown{
+    width: 700px;
+  height: 100;
+}
+.dropdown-menu{
+    width: 800px;
+}
+#e{
+    background-color: #7600d9;
+}
+
+/* }
 nav .left {
     display: flex;
     float: left;
@@ -43,60 +147,6 @@ nav button {
 nav .left div {
     margin-right: 15px;
 
-}
-
-.main {
-    position: relative;
-    background-image: url(slider-2.jpg);
-    height: 400px;
-    width: 100%;
-    margin-top: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.welcome {
-    background-color: white;
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.welcome label {
-    display: block;
-}
-
-.welcome input {
-    display: block;
-    width: 95%;
-    height: 20px;
-    margin-top: 5px;
-}
-
-.welcome button {
-    border: none;
-    color: rgb(255, 255, 255);
-    background-color: #7600d9;
-    height: 48px;
-    padding: 0px 16px;
-    font-size: 17px;
-    line-height: 26px;
-    border-radius: 6px;
-    justify-content: center;
-    width: 100%;
-}
-
-.welcome div h2 {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.welcome div p {
-    text-align: center;
-    margin-top: 1px;
 }
 
 .catg h1 {
@@ -169,8 +219,8 @@ nav .left div {
     height: 100%;
     width: 100%;
     margin: 0;
+    padding: 0;
     border-radius: 15px;
-    vertical-align: middle;
     border-style: none;
 }
 
@@ -183,40 +233,45 @@ nav .left div {
     padding-right: 100px;
     padding-left: 100px;
     display: flex;
-    
+
 }
 
-.contact{
+.contact {
     height: 100%;
     margin-right: 30px;
     display: inline;
 }
-.info{
+
+.info {
     height: 100%;
     margin-right: 30px;
 }
-.prof{
-    margin-right:  30px;
-    height: 100%;
-}
-.whts{
+
+.prof {
     margin-right: 30px;
     height: 100%;
 }
 
-.footer ul{
+.whts {
+    margin-right: 30px;
+    height: 100%;
+}
+
+.footer ul {
     padding-right: 0;
 }
-.footer ul li{
+
+.footer ul li {
     list-style-type: none;
 }
+
 .footer .contact .whts i {
     display: flex;
-   
-   border-radius: 50%;
+
+    border-radius: 50%;
 }
 
-.whts button{
+.whts button {
     background: #7e57c6;
     margin-right: 8px;
     flex-shrink: 0;
@@ -225,5 +280,5 @@ nav .left div {
     padding: 0 20px;
     font-family: inherit;
     font-size: 15px;
-   color: #fff;
-}
+    color: #fff;
+} */
