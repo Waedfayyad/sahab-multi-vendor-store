@@ -590,15 +590,16 @@
             <div  class=" col-9  d-flex position-relative">
                 <div class="filters d-flex ">
                     <span id="text_order_search">الترتيب حسب </span> <span id="filters_items_value"></span>
+                   
                     <div class="dropdown">
                         <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                        <div class="dropdown-menu text-right " aria-labelledby="dropdownMenuButton" style="width: 185px" id="filters_items">
-                            <a class="dropdown-item" id="price_asc">الأقل سعراً</a>
-                            <a class="dropdown-item" id="price_desc">الأعلى سعراً</a>
-                            <a class="dropdown-item" id="most_discount">الأكثر خصومات</a>
-                            <a class="dropdown-item" id="item_desc">الأحدث</a>
-                            <a class="dropdown-item" id="item_asc">الأقدم</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" >الأقل سعراً</a></li> 
+                          <li>  <a class="dropdown-item" >الأعلى سعراً</a></li>
+                            <li><a class="dropdown-item" >الأكثر خصومات</a></li>
+                            <li><a class="dropdown-item" >الأحدث</a></li>
+                           <li> <a class="dropdown-item" >الأقدم</a></li>
+                        </ul>
                     </div>
                     <div id="filter_price_from_to d-flex">
                         <div class="form-group from-to ">
